@@ -4,11 +4,11 @@ This custom component for [Home Assistant](https://www.home-assistant.io) allows
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 # Supported Functions
-* Open door
-* Arm/disarm alarm zone (user1 & 2 modes not supported)
-* Override access zone (Free & Secure (No PIN) modes only)
-* Monitor input state
+* Monitor & open door
+* Monitor & override alarm zone (user 1 & 2 modes not supported)
+* Monitor & override access zone (Free & Secure (No PIN) modes only)
 * Monitor & override output state
+* Monitor input state
 * Monitor fence zone voltage
 
 
