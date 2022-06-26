@@ -1,0 +1,6 @@
+{
+    "name": "Gallagher Command Centre - Rest Integration",
+    "render_readme": true,
+    "country": "NZ",
+    "homeassistant": "2022.4.0"
+}

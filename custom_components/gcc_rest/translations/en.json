@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Command Centre URL",
+                    "password": "Password",
+                    "username": "Username",
+                    "api_key": "API Key",
+                    "use_inputs": "Use Inputs",
+                    "use_outputs": "Use Outputs",
+                    "use_doors": "Use Doors",
+                    "use_alarm_zones": "Use Alarm Zones",
+                    "use_access_zones": "Use Access Zones",
+                    "use_fence_zones": "Use Fence Zones"
+                }
+            }
+        }
+    }
+}
