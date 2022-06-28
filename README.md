@@ -1,5 +1,5 @@
 # Home-Assistant-Gallagher-Integration
-This custom component for [Home Assistant](https://www.home-assistant.io) allows integration with a Gallagher Command Centre server
+This custom component for [Home Assistant](https://www.home-assistant.io) allows integration with a [Gallagher Command Centre](https://security.gallagher.com/) server.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
@@ -18,7 +18,7 @@ Installation of this integration can be done either manually, or with [HACS](htt
 <br>This guide will provide instructions on installation using HACS.
 <br>Follow the instructions, available on the HACS website [https://hacs.xyz/](https://hacs.xyz/) to install and configure HACS.
 
-<br>For security purproses, this guide requries that your Home Assistant installation uses a static IP address. Please follow the appropiate guide for your Home Assistant deployment method. 
+<br>For security purproses, this guide requries that your Home Assistant installation uses a static IP address. Please follow the appropiate guide for your Home Assistant deployment method to set a static IP address. 
 <br>
 
 ## Installation
@@ -98,9 +98,19 @@ The items imported from Command Centre are avaialble in Home Assistant using a p
 
 # FAQ
 * <b>Does this integration require additional Command Centre Licenses?</b>
-<br>Yes, this integration requires the RESTStatus and RESTOverrides feature to be enabled in your Command Centre License file.
+<br>Yes, this integration requires the RESTStatus and RESTOverrides feature to be enabled in your Command Centre License file. It also requires that you have atleast 1 spare cardholder and 1 spare operator group available to use prior to configuration.
 * <b>Can I select the items to import?</b>
 <br>The current version of the integration automatically finds, and imports all items of each selected group. There is currently no way to limit which items to import. If your installation has more then 1,000 of any item type, only the first 1,000  will be imported into Home Assistant.
 
+<br><br>
+
+# Known Issues
+The currently known issues with this integration are as follows:
 <br>
 
+* Failure to reconnect to Command Centre.
+<br>If the command centre server is rebooted, or offline for an extended period of time, the integration may not correctly re-establish an update subscription. This will pretend updated states from being reflected in Home Assistant. This issue does not appear to occur if connection is lost for only a short period of time (<5 minutes).
+
+<br>
+
+:shipit:

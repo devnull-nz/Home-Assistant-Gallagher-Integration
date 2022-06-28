@@ -1,2 +1,4 @@
 # Python Cache
 /__pycache__
+custom_components/.DS_Store
+custom_components/gcc_rest/.DS_Store
