@@ -99,3 +99,5 @@ class GCCBinarySensor(BinarySensorEntity):
     async def async_get_last_state(self):
         """Returns item state"""
         return self._is_on
+
+

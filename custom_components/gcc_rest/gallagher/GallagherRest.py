@@ -192,14 +192,14 @@ class GallagherRest:
 
             if not res_json["version"].startswith(expected_version):
                 self.log.warning(
-                    "The version of Command Centre API is not compatible with this integration"
+                    "The version of Command Centre API is tested with this integration version, instablity may occur"
                 )
                 self.log.warning(
                     "Version Found: {} - Major Version Expected: {}".format(
                         res_json["version"], expected_version
                     )
                 )
-                return False
+                #return False
 
             self.log.info("Command Centre Version: {}".format(res_json["version"]))
 
