@@ -79,7 +79,7 @@ async def async_gcc_rest_setup(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     await hass.async_add_executor_job(gallagher.start)
     await hass.async_add_executor_job(time.sleep, 1)
 
-    hass.config_entries.async_setup_platforms(entry, PLATFORMS)
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
     return True
 
