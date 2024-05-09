@@ -84,7 +84,7 @@ class GCCBinarySensor(BinarySensorEntity):
                 continue
 
             self._extra_state_attributes[attr] = gcc_update[attr]
-        self.async_write_ha_state()
+        self.schedule_update_ha_state()
 
     async def async_added_to_hass(self) -> None:
         """Handle entity which will be added."""

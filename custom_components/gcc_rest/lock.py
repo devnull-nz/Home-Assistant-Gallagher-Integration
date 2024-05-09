@@ -99,7 +99,7 @@ class GCCAccessZoneLock(LockEntity):
 
             self._extra_state_attributes[attr] = gcc_update[attr]
 
-        self.async_write_ha_state()
+        self.schedule_update_ha_state()
 
     def lock(self, **kwargs):
         self._gallagher.get_access_zone(self._gallagher_id).set_secure("secure")
